@@ -50,10 +50,30 @@
 // alert('2をかけ続けて' + max + 'を超えるのに必要だった回数は' + count + '回です');
 
 // --for文 決められた回数の処理を繰り返す
-let i;
-let num = 0;
+// let i;
+// let num = 0;
 
-for(i = 1; i < 11; i++){
-  num = num + i;
-}
-alert('1から10まで足し算した結果は' + num + 'です');
+// for(i = 1; i < 11; i++){
+//   num = num + i;
+// }
+// alert('1から10まで足し算した結果は' + num + 'です');
+
+
+
+// 1-5
+// $(function(){
+//   $('.box1').css({
+//     'background-color': '#0000ff',
+//     'height': '100px'
+//   });
+// });
+
+$(function(){
+  $('.box1').slideDown(function(){
+    $('.box1').css({
+      'background-color': '#0000ff',
+      'width': '200px',
+      'height': '100px'
+    }).slideUp();
+  });
+});
